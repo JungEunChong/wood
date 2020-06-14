@@ -3,7 +3,7 @@
 #include <time.h>
 
 int main() {
-	int num, try = 0;
+	int num, try = 1;
 	int answer;
 	srand((unsigned int)time(NULL));
 
@@ -11,6 +11,7 @@ int main() {
 
 	while(1) {
 		while(1) {
+			printf("try : %d\n", try);
 			printf("num : ");
 			scanf("%d", &num);
 
@@ -27,9 +28,10 @@ int main() {
 			try += 1;
 		}
 		else {
-			printf("great!!!\n");
+			printf("great!!!\n\n");
 			break;
 		}
+		printf("\n");
 	}
 
 	printf("your try : %d\n", try);
