@@ -3,6 +3,8 @@
 #include <time.h>
 
 int main() {
+	printf("/// UPDOWN GAME ///\n\n");
+
 	int num, try = 1;
 	int answer;
 	srand((unsigned int)time(NULL));
